@@ -1,2 +1,2 @@
 update-cert:
-	wget "https://storage.yandexcloud.net/cloud-certs/CA.pem" -O kafka_python_yc/YandexInternalRootCA.crt
+	wget "https://storage.yandexcloud.net/cloud-certs/CA.pem" -O yc_kafka_python/YandexInternalRootCA.crt
