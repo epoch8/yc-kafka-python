@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "yc-kafka-python"
+version = "0.1.0"
+description = "kafka-python wrapper for Yandex Cloud"
+authors = ["Andrey Tatarinov <a@tatarinov.co>"]
+readme = "README.md"
+packages = [
+    { include = "yc_kafka_python", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+kafka-python = "^2.0.2"
+lz4 = "^4.3.2"
+python-snappy = "^0.6.1"
+crc32c = "^2.3.post0"
+
+
+[tool.poetry.group.dev.dependencies]
+types-setuptools = "^68.2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
