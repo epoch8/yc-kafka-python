@@ -1,7 +1,7 @@
 import pkg_resources
 from kafka import KafkaProducer, KafkaConsumer
 
-CA_FILE = pkg_resources.resource_filename("kafka_python_yc", "YandexInternalRootCA.crt")
+CA_FILE = pkg_resources.resource_filename("yc_kafka_python", "YandexInternalRootCA.crt")
 
 
 def make_yc_kafka_producer(username: str, password: str, *args, **kwargs) -> KafkaProducer:
